@@ -1,0 +1,392 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "Format:{first_name} {last_name}   {phone_number}",
+ "creation": "2023-11-16 13:20:10.832728",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "vgender",
+  "cb1_column",
+  "first_name",
+  "cb2_column",
+  "last_name",
+  "name1",
+  "sb1_section",
+  "address",
+  "address_line2",
+  "city",
+  "state",
+  "zipcode",
+  "column_break_zij8y",
+  "date_of_birth",
+  "email_address",
+  "phone_number",
+  "alternate_contact_person",
+  "alternate_contact_no",
+  "column_break_obf18",
+  "languages_known",
+  "blood_group",
+  "id_proof",
+  "attach__id_proof",
+  "attach_your_recent_photo",
+  "event_details_and_availability_tab",
+  "event",
+  "section_break_ugiap",
+  "event_name",
+  "event_address",
+  "column_break_5loud",
+  "event_start_date",
+  "event_end_date",
+  "event_start_time",
+  "event_end_time",
+  "column_break_93gsn",
+  "total_duration",
+  "please_specify_dates_available",
+  "food_and_accommodation_tab",
+  "food_arranged",
+  "accomodation_arranged",
+  "food_preferences_section",
+  "choice",
+  "column_break_njkh5",
+  "please_tick_your_choice_section",
+  "breakfast",
+  "lunch",
+  "dinner",
+  "accommodation_preferences_section",
+  "from_date",
+  "to_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "vgender",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Salutation",
+   "options": "Mr\nMiss\nMrs",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cb1_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cb2_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last name"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Read Only",
+   "label": "Name"
+  },
+  {
+   "fieldname": "sb1_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address Line1",
+   "options": "Address"
+  },
+  {
+   "fieldname": "address_line2",
+   "fieldtype": "Data",
+   "label": "Address Line2"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "fieldname": "zipcode",
+   "fieldtype": "Data",
+   "label": "ZipCode"
+  },
+  {
+   "fieldname": "column_break_zij8y",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date Of Birth"
+  },
+  {
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "label": "Email Address"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Phone",
+   "in_list_view": 1,
+   "label": "Phone number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "alternate_contact_person",
+   "fieldtype": "Data",
+   "label": "Alternate Contact Person",
+   "reqd": 1
+  },
+  {
+   "fieldname": "alternate_contact_no",
+   "fieldtype": "Phone",
+   "label": "Alternate Contact No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_obf18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "languages_known",
+   "fieldtype": "Data",
+   "label": "Languages Known"
+  },
+  {
+   "fieldname": "blood_group",
+   "fieldtype": "Data",
+   "label": "Blood Group"
+  },
+  {
+   "fieldname": "id_proof",
+   "fieldtype": "Select",
+   "label": "Id Proof",
+   "options": "Aadhar Card\nDriving License\nPan Card\nSmart Card\nOther govt id",
+   "reqd": 1
+  },
+  {
+   "fieldname": "attach__id_proof",
+   "fieldtype": "Attach",
+   "label": "Attach  ID Proof",
+   "reqd": 1
+  },
+  {
+   "fieldname": "attach_your_recent_photo",
+   "fieldtype": "Attach Image",
+   "label": "Attach your recent photo"
+  },
+  {
+   "fieldname": "event_details_and_availability_tab",
+   "fieldtype": "Tab Break",
+   "label": "Event Details and Availability"
+  },
+  {
+   "fieldname": "event",
+   "fieldtype": "Link",
+   "label": "Event ",
+   "options": "Create Event"
+  },
+  {
+   "fieldname": "section_break_ugiap",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "event.event_name",
+   "fieldname": "event_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Event Name",
+   "options": "Event Details",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "event.event_description",
+   "fieldname": "event_address",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Details",
+   "options": "Event Details",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_5loud",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "event.start_date",
+   "fieldname": "event_start_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Event Start Date",
+   "options": "Event Details",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "event.end_date",
+   "fieldname": "event_end_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Event End Date",
+   "options": "Event Details",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "event.start_time",
+   "fieldname": "event_start_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Event Start Time",
+   "options": "Event Details",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "event.end_time",
+   "fieldname": "event_end_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Event End Time",
+   "options": "Event Details",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_93gsn",
+   "fieldtype": "Column Break",
+   "label": "Volunteer Availability",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_duration",
+   "fieldtype": "Duration",
+   "label": "Total Duration"
+  },
+  {
+   "fieldname": "please_specify_dates_available",
+   "fieldtype": "Text",
+   "label": "Please Specify Dates Available"
+  },
+  {
+   "fieldname": "food_and_accommodation_tab",
+   "fieldtype": "Tab Break",
+   "label": "Food and Accommodation"
+  },
+  {
+   "fetch_from": "event.food_planned",
+   "fieldname": "food_arranged",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Food Arranged"
+  },
+  {
+   "fetch_from": "event.accommodation_planned",
+   "fieldname": "accomodation_arranged",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Accomodation Arranged"
+  },
+  {
+   "depends_on": "eval:doc.food_arranged==\"YES\"",
+   "fieldname": "food_preferences_section",
+   "fieldtype": "Section Break",
+   "label": "Food Preferences"
+  },
+  {
+   "fieldname": "choice",
+   "fieldtype": "Select",
+   "label": "Choice",
+   "options": "Vegetarian\nNon Vegetarian"
+  },
+  {
+   "fieldname": "column_break_njkh5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.food_arranged==\"YES\"",
+   "fieldname": "please_tick_your_choice_section",
+   "fieldtype": "Section Break",
+   "label": "Please tick your choice"
+  },
+  {
+   "default": "0",
+   "fieldname": "breakfast",
+   "fieldtype": "Check",
+   "label": "Breakfast"
+  },
+  {
+   "default": "0",
+   "fieldname": "lunch",
+   "fieldtype": "Check",
+   "label": "Lunch"
+  },
+  {
+   "default": "0",
+   "fieldname": "dinner",
+   "fieldtype": "Check",
+   "label": "Dinner"
+  },
+  {
+   "depends_on": "eval:doc.accomodation_arranged==\"YES\"",
+   "fieldname": "accommodation_preferences_section",
+   "fieldtype": "Section Break",
+   "label": "Accommodation Preferences"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-21 12:43:31.557108",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Volunteer Registration item",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Event Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

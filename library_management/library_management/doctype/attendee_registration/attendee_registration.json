@@ -1,0 +1,328 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{first_name}   {last_name}     -{phone_number} ",
+ "creation": "2023-11-16 11:47:50.252561",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "profile_tab",
+  "gender",
+  "cb1_column",
+  "first_name",
+  "cb2_column",
+  "last_name",
+  "name1",
+  "sb1_section",
+  "address_line1",
+  "address_line2",
+  "city",
+  "state",
+  "zipcode",
+  "column_break_zij8y",
+  "date_of_birth",
+  "email_address",
+  "phone_number",
+  "alternate_contact_number",
+  "photo",
+  "accommodation_tab",
+  "select_the_event_you_would_like_to_attend",
+  "event_name",
+  "event_details",
+  "geo_location",
+  "noofppl",
+  "would_you_like_to_resgister_as_vip",
+  "notify",
+  "food_tab",
+  "food_arranged",
+  "accomodation_arranged",
+  "food_preferences_section",
+  "column_break_0q1fc",
+  "choice",
+  "column_break_lxiau",
+  "please_tick_your_choice_section",
+  "breakfast",
+  "lunch",
+  "dinner",
+  "accomodation_preferences_section",
+  "column_break_2iwmi",
+  "from_date",
+  "column_break_qktog",
+  "to_date",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "profile_tab",
+   "fieldtype": "Tab Break",
+   "label": "Profile"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Register",
+   "options": "Mr\nMiss\nMrs",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cb1_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cb2_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last name"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Read Only",
+   "label": "Name"
+  },
+  {
+   "fieldname": "sb1_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "address_line1",
+   "fieldtype": "Data",
+   "label": "Address Line1"
+  },
+  {
+   "fieldname": "address_line2",
+   "fieldtype": "Data",
+   "label": "Address Line2"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "fieldname": "zipcode",
+   "fieldtype": "Data",
+   "label": "ZipCode"
+  },
+  {
+   "fieldname": "column_break_zij8y",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date Of Birth"
+  },
+  {
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "label": "Email Address"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Phone",
+   "in_list_view": 1,
+   "label": "Phone number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "alternate_contact_number",
+   "fieldtype": "Phone",
+   "label": "Alternate Contact Number"
+  },
+  {
+   "fieldname": "photo",
+   "fieldtype": "Attach Image",
+   "label": "Please attach your recent photo "
+  },
+  {
+   "fieldname": "accommodation_tab",
+   "fieldtype": "Tab Break",
+   "label": "Event"
+  },
+  {
+   "fieldname": "select_the_event_you_would_like_to_attend",
+   "fieldtype": "Link",
+   "label": "Select the event you would like to attend",
+   "options": "Create Event"
+  },
+  {
+   "fetch_from": "select_the_event_you_would_like_to_attend.event_name",
+   "fieldname": "event_name",
+   "fieldtype": "Data",
+   "label": "Event Name"
+  },
+  {
+   "fetch_from": "select_the_event_you_would_like_to_attend.venue_address",
+   "fieldname": "event_details",
+   "fieldtype": "Text",
+   "label": "Event Details",
+   "options": "Event Details"
+  },
+  {
+   "fetch_from": "select_the_event_you_would_like_to_attend.geo_location",
+   "fieldname": "geo_location",
+   "fieldtype": "Link",
+   "label": "Geo Location",
+   "options": "Event Details"
+  },
+  {
+   "default": "0",
+   "fieldname": "noofppl",
+   "fieldtype": "Int",
+   "label": "Please enter the number of people attending event with you"
+  },
+  {
+   "fieldname": "would_you_like_to_resgister_as_vip",
+   "fieldtype": "Select",
+   "label": "Would you like to resgister as VIP",
+   "options": "YES\nNO"
+  },
+  {
+   "default": "0",
+   "fieldname": "notify",
+   "fieldtype": "Check",
+   "label": "Would you like to be updated about upcoming events"
+  },
+  {
+   "fieldname": "food_tab",
+   "fieldtype": "Tab Break",
+   "label": "Food & Accommodation"
+  },
+  {
+   "fetch_from": "select_the_event_you_would_like_to_attend.food_planned",
+   "fieldname": "food_arranged",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Food Arranged",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "select_the_event_you_would_like_to_attend.accommodation_planned",
+   "fieldname": "accomodation_arranged",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Accomodation Arranged",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.food_arranged==\"YES\"",
+   "fieldname": "food_preferences_section",
+   "fieldtype": "Section Break",
+   "label": "Food Preferences"
+  },
+  {
+   "fieldname": "column_break_0q1fc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "choice",
+   "fieldtype": "Select",
+   "label": "Choice",
+   "options": "Vegetarian\nNon Vegetarian"
+  },
+  {
+   "fieldname": "column_break_lxiau",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.food_arranged===\"YES\"",
+   "fieldname": "please_tick_your_choice_section",
+   "fieldtype": "Section Break",
+   "label": "Please tick your choice"
+  },
+  {
+   "default": "0",
+   "fieldname": "breakfast",
+   "fieldtype": "Check",
+   "label": "Breakfast"
+  },
+  {
+   "default": "0",
+   "fieldname": "lunch",
+   "fieldtype": "Check",
+   "label": "Lunch"
+  },
+  {
+   "default": "0",
+   "fieldname": "dinner",
+   "fieldtype": "Check",
+   "label": "Dinner"
+  },
+  {
+   "depends_on": "eval:doc.accomodation_arranged==\"YES\"",
+   "fieldname": "accomodation_preferences_section",
+   "fieldtype": "Section Break",
+   "label": "Accommodation Preferences"
+  },
+  {
+   "fieldname": "column_break_2iwmi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "column_break_qktog",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Attendee Registration",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-21 12:44:26.985302",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Attendee Registration",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

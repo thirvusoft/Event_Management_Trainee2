@@ -1,0 +1,251 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{first_name}   {last_name}     -{phone_number} ",
+ "creation": "2023-11-16 17:12:49.935886",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "profile_tab",
+  "gender",
+  "cb1_column",
+  "first_name",
+  "cb2_column",
+  "last_name",
+  "name1",
+  "section_break_wy2hm",
+  "company_name",
+  "column_break_ex9ud",
+  "industry_type",
+  "sb1_section",
+  "contact_person_name",
+  "designation",
+  "date_of_birth",
+  "email_address",
+  "phone_number",
+  "alternate_mobile_no",
+  "column_break_zij8y",
+  "address",
+  "address_line2",
+  "city",
+  "state",
+  "country",
+  "zipcode",
+  "sponsor_details_tab",
+  "sponsor_type",
+  "sponsor_level",
+  "column_break_po1sf",
+  "specifications",
+  "amount",
+  "addiitional_details_section",
+  "please_enter_sponsorship_description",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "profile_tab",
+   "fieldtype": "Tab Break",
+   "label": "Profile"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Salutation",
+   "options": "Mr\nMiss\nMrs",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cb1_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cb2_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last name"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Read Only",
+   "label": "Name"
+  },
+  {
+   "fieldname": "section_break_wy2hm",
+   "fieldtype": "Section Break",
+   "label": "Company Details"
+  },
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company Name"
+  },
+  {
+   "fieldname": "column_break_ex9ud",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "industry_type",
+   "fieldtype": "Data",
+   "label": "Industry Type"
+  },
+  {
+   "fieldname": "sb1_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "contact_person_name",
+   "fieldtype": "Data",
+   "label": "Contact Person Name"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of birth"
+  },
+  {
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "label": "Email Address"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Phone",
+   "in_list_view": 1,
+   "label": "Phone number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "alternate_mobile_no",
+   "fieldtype": "Phone",
+   "label": "Alternate Mobile No"
+  },
+  {
+   "fieldname": "column_break_zij8y",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address Line1",
+   "options": "Address"
+  },
+  {
+   "fieldname": "address_line2",
+   "fieldtype": "Data",
+   "label": "Address Line2"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "label": "Country"
+  },
+  {
+   "fieldname": "zipcode",
+   "fieldtype": "Data",
+   "label": "ZipCode"
+  },
+  {
+   "fieldname": "sponsor_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Sponsor Details"
+  },
+  {
+   "fieldname": "sponsor_type",
+   "fieldtype": "Select",
+   "label": "Sponsor Type",
+   "options": "Media Sponsor\nFinancial Sponsor\nKit Sponsor\nPromotional Partner\nFood Sponsor\nDigital Sponsor\nVenue Sponsor"
+  },
+  {
+   "fieldname": "sponsor_level",
+   "fieldtype": "Select",
+   "label": "Sponsor Level",
+   "options": "Gold (more than 10Lakhs)\nPlatinum (5Lakhs to 10 Lakhs)\nSilver(Less than 5Lakhs)"
+  },
+  {
+   "fieldname": "column_break_po1sf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "specifications",
+   "fieldtype": "Data",
+   "label": "Specifications"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "addiitional_details_section",
+   "fieldtype": "Section Break",
+   "label": "Additional Details"
+  },
+  {
+   "fieldname": "please_enter_sponsorship_description",
+   "fieldtype": "Text",
+   "label": "Please enter sponsorship description"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Sponsor Registration Item",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-21 12:44:48.985202",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Sponsor Registration Item",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

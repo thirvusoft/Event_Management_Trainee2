@@ -1,0 +1,145 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{Event Name}  {Date}  {ph_no}",
+ "creation": "2023-11-20 10:52:41.051672",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "event_name",
+  "date",
+  "section_break_exgol",
+  "volunteer_or_attendee",
+  "column_break_eyusj",
+  "ph_no",
+  "section_break_ipxer",
+  "column_break_4o2d6",
+  "salutation",
+  "photo",
+  "column_break_rhmhf",
+  "name1",
+  "barcode",
+  "column_break_kwp6x",
+  "address",
+  "attendance_record_section",
+  "attendance"
+ ],
+ "fields": [
+  {
+   "fieldname": "event_name",
+   "fieldtype": "Link",
+   "label": "Event Name",
+   "options": "Create Event"
+  },
+  {
+   "fetch_from": "event_name.start_date",
+   "fieldname": "date",
+   "fieldtype": "Data",
+   "label": "Date",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_exgol",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "volunteer_or_attendee",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Volunteer or Attendee?",
+   "options": "Volunteer\nAttendee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_eyusj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ph_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Ph no",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_ipxer",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_4o2d6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "salutation",
+   "fieldtype": "Data",
+   "label": "Salutation"
+  },
+  {
+   "fieldname": "photo",
+   "fieldtype": "Image",
+   "label": "Photo"
+  },
+  {
+   "fieldname": "column_break_rhmhf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "barcode",
+   "fieldtype": "Barcode",
+   "label": "Barcode"
+  },
+  {
+   "fieldname": "column_break_kwp6x",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "attendance_record_section",
+   "fieldtype": "Section Break",
+   "label": "Attendance Record"
+  },
+  {
+   "fieldname": "attendance",
+   "fieldtype": "Table",
+   "label": "Attendance ",
+   "options": "Attendance"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-21 12:41:18.225812",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Idcard and Attendance",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
